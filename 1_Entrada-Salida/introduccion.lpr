@@ -5,6 +5,8 @@ program introduccion;
 {Todo programa comienza con la palabra reservada "program" y el nombre de este,
 debe ser identico al nombre de archivo}
 
+{"begin" y "end." son delimitadores de estructura para nuestro programa}
+
 begin    {Inicio de nuestro bloque principal en Pascal}
 
          write ('Hola mundo');
