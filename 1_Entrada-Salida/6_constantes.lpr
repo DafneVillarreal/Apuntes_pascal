@@ -1,11 +1,11 @@
 program constantes;
 
+const IVA = 22;
 {
 Las constantes deben ser declarar incluso antes que las variables.
 
 Pascal automaticamente asigna el valor de las constantes
 }
-const IVA = 22;
 
 var CostoSinIVA, calculo, CostoConIVA : real;
 
