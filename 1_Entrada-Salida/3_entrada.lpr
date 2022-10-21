@@ -5,7 +5,7 @@ La palabra reservada "var" nos indicara que
 var <nombre variable> : <tipo de dato>;
 }
 var nombre : string;
-    edad   : byte = 0;    {Siempre inicializar los numeros}
+    edad   : byte = 0;    //Siempre inicializar los numeros
 {
 Definimos las variables antes de los bloques de codigo.
 Pascal es un lenguaje fuertemente tipado, debemos especificar el tipo de dato
@@ -24,7 +24,7 @@ begin
 
   write ('Hola, ');
   write (nombre);
-  {Mostraremos en pantalla el contenido de la variable}
+  //Mostraremos en pantalla el contenido de la variable
   readln;
 
   write ('Adios, ' + nombre);
