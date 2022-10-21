@@ -44,7 +44,7 @@ begin
 
   perimetro:= lado*4;
   area:= lado*lado;
-  {Para asignar valores debemos usar " := "}
+  //Para asignar valores debemos usar " := "
 
   writeln ('El perimetro del cuadrado es: ', perimetro);
   writeln ('El area del cuadrado es: ', area);
@@ -58,9 +58,7 @@ begin
   cumulo:= cumulo + dato;
   write ('La suma de los numeros es: ', cumulo);
   readln;
-  {
-  Sumaremos el valor actual mas el nuevo, asignandolo al mismo espacio en memoria
-  }
+  //Sumaremos el valor actual mas el nuevo, asignandolo al mismo espacio en memoria
   
   readln;
   write ('Ingrese un numero: ');
