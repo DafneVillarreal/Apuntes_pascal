@@ -20,7 +20,7 @@ OPERADOR |        OPERACION              |  EJEMPLO | RESULTADO
 +        | Suma                          | a + b    | Suma de a y b
 -        | Resta                         | a - b    | Diferencia de a y b
 *        | Multiplicacion                | a * b    | Producto de a y b
-/        | Division                      | a / b    | Cociente de a por b
+/        | Division real                 | a / b    | Cociente de a por b
 div      | Division entera               | a div b  | Cociente entero de a por b
 mod      | Modulo                        | a mod b  | Resto de a por b
 shl      | Desplazamiento a la izquierda | a shl b  | Desplazar a la izquierda b bits
@@ -34,8 +34,10 @@ Podemos definir varias variables del mismo tipo de dato en una linea,
 usando una coma para dividirlas
 }
 
-var dato, cumulo : integer;   
+var dato, cumulo : integer;
     numero1, numero2, suma, resta, multiplicacion, division, promedio : real;
+
+var manzanas, personas, cociente, sobra : integer;
 
 begin
 
@@ -59,7 +61,8 @@ begin
   write ('La suma de los numeros es: ', cumulo);
   readln;
   //Sumaremos el valor actual mas el nuevo, asignandolo al mismo espacio en memoria
-  
+
+
   readln;
   write ('Ingrese un numero: ');
   readln (numero1);
@@ -85,5 +88,17 @@ begin
   Otras opciones es que el usuario no ingrese un 0 evitando que truene el programa
   }
 
-end.
+  readln;
+  write('Ingrese el numero de manzanas: ');
+  readln(manzanas);
+  write('Ingrese el numero de personas: ');
+  readln(personas);
 
+  cociente:= manzanas div personas;
+  sobra:= manzanas mod personas;
+
+  writeln ('A cada persona le tocaran ', cociente, ' manzanas');
+  writeln ('Y sobraran ', sobra, ' manzanas');
+  readln;
+
+end.
